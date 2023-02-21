@@ -5,7 +5,7 @@ class Solution {
         // 경우의 수를 저장하는 배열 초기화
         long[] dp = new long[n];
         dp[0] = 1;
-        if( n== 1){
+        if(n == 1){
             return 1;
         }
         dp[1] = 2;
