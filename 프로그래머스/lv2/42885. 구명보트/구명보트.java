@@ -4,9 +4,10 @@ class Solution {
     public int solution(int[] people, int limit) {
         int answer = 0;
         
+        //오름차순으로 정렬
+        Arrays.sort(people);
         int left = 0;
         int right = people.length - 1;
-        Arrays.sort(people);
         
         while(left < right){
             
@@ -22,6 +23,7 @@ class Solution {
             answer++;
         }
         
+        //아직 남아있는 사람이 있는 경우
         if(left == right) {
             answer++;
         }
