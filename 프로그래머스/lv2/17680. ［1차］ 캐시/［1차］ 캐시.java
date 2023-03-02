@@ -18,7 +18,6 @@ class Solution {
             //캐시에 있는 경우
             if(cache.contains(cities[i])) {
                 answer += 1;
-                //해당 도시 캐시 가장 처음으로 이동
                 cache.remove(cities[i]);
             }
             //캐시에 없는 경우
@@ -26,10 +25,10 @@ class Solution {
                 answer += 5;
                 //캐시가 가득찬 경우
                 if(cache.size() >= cacheSize){
-                    cache.remove(cacheSize - 1);
+                    cache.remove(0);
                 }
             }
-            cache.add(0, cities[i]);
+            cache.add(cities[i]);
         }
         
         return answer;
