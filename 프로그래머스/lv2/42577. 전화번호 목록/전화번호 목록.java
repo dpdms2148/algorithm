@@ -5,9 +5,10 @@ import java.util.Map;
 class Solution {
     public boolean solution(String[] phone_book) {
         boolean answer = true;
-        Map<String, Integer> map = new HashMap<>();
         int n = phone_book.length;
         
+        //방법3. hash map 사용
+        Map<String, Integer> map = new HashMap<>();
         for(int i = 0; i < n;  i++){
             map.put(phone_book[i], i);
         }
