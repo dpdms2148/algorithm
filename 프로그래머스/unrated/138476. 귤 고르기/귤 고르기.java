@@ -10,8 +10,7 @@ class Solution {
         int answer = 0;
 
         for(int i = 0; i < tangerine.length; i++){
-            int count = map.getOrDefault(tangerine[i], 0);
-            map.put(tangerine[i], count+1);
+            map.put(tangerine[i], map.getOrDefault(tangerine[i], 0)+1);
         }
         
         //귤이 많은 순서대로(내림차순으로) 정렬
