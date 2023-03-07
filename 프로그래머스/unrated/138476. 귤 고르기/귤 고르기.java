@@ -22,12 +22,11 @@ class Solution {
         int sum = 0;
         for (Integer val : valueList) {
             sum += val;
+            answer++;
             //귤 개수가 k를 넘은 경우
             if(sum >= k){
-                answer++;
                 break;
             }
-            answer++;
         }
         return answer;
     }
