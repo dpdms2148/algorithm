@@ -3,7 +3,7 @@ class Solution {
     
     public int solution(int[] numbers, int target) {
         answer = 0;
-        dfs(0, 0, numbers, target);
+        dfs(0, 0, numbers, target);//탐색 깊이, 시작 값, 숫자 배열, 타겟 값
         return answer;
     }
     
