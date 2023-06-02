@@ -1,4 +1,4 @@
-# [unrated] 뒤에 있는 큰 수 찾기 - 154539 
+# [level 2] 뒤에 있는 큰 수 찾기 - 154539 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/154539) 
 
