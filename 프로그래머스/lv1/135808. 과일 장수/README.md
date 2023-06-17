@@ -1,4 +1,4 @@
-# [unrated] 과일 장수 - 135808 
+# [level1] 과일 장수 - 135808 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/135808) 
 
