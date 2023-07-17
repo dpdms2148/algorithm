@@ -142,15 +142,8 @@ public class Main {
             }
         }
         for (Fireball fireball : fireballList) {
-            //fireball.r = fireball.r + dx[fireball.d] * (fireball.s % N);
-            //fireball.c = fireball.c + dy[fireball.d] * (fireball.s % N);
             fireball.r = (fireball.r + (dx[fireball.d] + N) * fireball.s) % N;
             fireball.c = (fireball.c + (dy[fireball.d] + N) * fireball.s) % N;
-            //범위를 벗어나는 경우
-//            if (fireball.r >= N) fireball.r %= N;
-//            if (fireball.c >= N) fireball.c %= N;
-//            if (fireball.r < 0) fireball.r = N + fireball.r;
-//            if (fireball.c < 0) fireball.c = N + fireball.c;
 
             map[fireball.r][fireball.c].add(fireball);
         }
