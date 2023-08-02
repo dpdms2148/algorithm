@@ -1,4 +1,4 @@
-# [level2] 무인도 여행 - 154540 
+# [level 2] 무인도 여행 - 154540 
 
 [문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/154540) 
 
