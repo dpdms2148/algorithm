@@ -11,13 +11,12 @@ public class Main {
         int N = Integer.parseInt(br.readLine()); // 지방의 수 3 <= N <= 10,000
 
         int left = 0;
-        int right = -1;
+        int right = 0;
         int[] budget = new int[N];               // 각 지방의 예산 3 <= budget <=100,000
         StringTokenizer st = new StringTokenizer(br.readLine());
         for (int i = 0; i < N; i++) {
             budget[i] = Integer.parseInt(st.nextToken());
             right = Math.max(right, budget[i]);
-            left = Math.min(left, budget[i]);
         }
 
         int M = Integer.parseInt(br.readLine()); // 총 예산  N <= M <= 1,000,000,000
