@@ -20,6 +20,7 @@ public class Main {
         for (int a = 0; a < N; a++) {
             for (int b = a + 1; b < N; b++) {
                 for (int c = b + 1; c < N; c++) {
+                    // 세 점 고르기
                     long ax = point[a][0];
                     long ay = point[a][1];
                     long bx = point[b][0];
@@ -27,9 +28,12 @@ public class Main {
                     long cx = point[c][0];
                     long cy = point[c][1];
 
+                    // 두 점 사이의 거리
                     long ab = (ax - bx) * (ax - bx) + (ay - by) * (ay - by);
                     long bc = (bx - cx) * (bx - cx) + (by - cy) * (by - cy);
                     long ca = (cx - ax) * (cx - ax) + (cy - ay) * (cy - ay);
+                    
+                    // 피타고라스의 정리
                     if ((ab + bc == ca) || (bc + ca == ab) || (ca + ab == bc)) answer++;
                 }
             }
